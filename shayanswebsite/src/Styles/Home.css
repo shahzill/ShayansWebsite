@@ -1,0 +1,147 @@
+.page1{
+    min-height: 100vh;
+}
+
+.page1-intro{
+    color: azure;
+    display: flex;
+    line-height: 70vh;
+    justify-content: left;
+    padding-left: 5%;
+    font-size: 300%;
+}
+.center h1{
+    user-select: none;
+    font-size: 100px;
+    color: white;
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+                rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+    0%{
+    background-position-x: 0%;
+    }
+    100%{
+    background-position-x: 600vw;
+    }
+}
+
+.page1-video2{
+    resize: vertical;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.page2{
+    min-height: 100vh;
+}
+
+.page2-header{
+    color: azure;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    padding-top: 3%;
+}
+.page2-clients{
+    padding-top: 5%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 200px;
+    justify-content: center;
+}
+.page2-card{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 50%;
+}
+.page2-card:hover{
+    transform: scale(1.1);
+}
+.page2-card1{
+    background-image: url("../Images/Card1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page2-card2{
+    background-image: url("../Images/Card2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page2-card3{
+    background-image: url("../Images/Card1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page2-card4{
+    background-image: url("../Images/Card2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page2-card5{
+    background-image: url("../Images/Card1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page2-card6{
+    background-image: url("../Images/Card2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page3{
+    min-height: 100vh;
+}
+
+.page3-header{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 200%;
+    padding-top: 3%;
+}
+.page3-prices{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+}
+
+.page3-singlePrice{
+    height: 500px;
+    background-color: white;
+    width: 300px;
+
+}
+
+.page3-singlePrice .page3-header{
+    color: black;
+}
+
+.page3-priceSpecs{
+    padding: 10%;
+}
+
+.page3-priceSpecs p{
+    padding-top: 10%;
+}
